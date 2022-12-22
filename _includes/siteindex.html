@@ -1,0 +1,14 @@
+<ul id="index">
+    {% for item in site.data.index %}
+        <li>
+            <a {% if page.url == item.permalink %} class="selected" {% endif %}
+               {% if item.link %}
+                   href="{{ item.link }}"
+               {% else %}
+                   href="{{ item.permalink  | prepend: site.baseurl }}"
+               {% endif %}
+               >{{item.display}}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

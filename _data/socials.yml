@@ -1,0 +1,11 @@
+- name: discord
+  url: https://discordapp.com/invite/aRUAYFN
+  icon: discord.png
+
+- name: twitter
+  url: https://twitter.com/pebble_dev/
+  icon: twitter.png
+
+- name: email
+  url: /contact/
+  icon: email.png

@@ -1,0 +1,47 @@
+
+# Site settings
+title: Rebble
+# email: your-email@domain.com
+description: >
+  The goal of Rebble is to maintain and advance Pebble functionality in the absence of Pebble Technology Corp.
+baseurl: ""		# no trailing slash
+url: ""	# no trailing slash
+excerpt_separator: <!--more-->
+
+about: >
+  TODO
+twitter_username:    pebble_dev
+github_username:     pebble-dev
+#facebook_username:   TODO
+#linkedin_username:   TODO
+#google_username:     TODO
+#youtube_username:    TODO
+#instagram_username:  TODO
+#reddit_username:     TODO
+#tumblr_username:     TODO
+#lastfm_username:  	 TODO
+#soundcloud_username: TODO
+#miiverse_username:   TODO
+
+# Blog pagination settings
+paginate: 5
+paginate_path: "/blog/:num/"
+
+# Controls the hackathon page sticker
+hackathonActive: false
+hackathonUrl: "/hackathon-001"
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+sass:
+  sass_dir: _scss
+  style: compressed
+
+
+plugins:
+- jekyll-paginate
+- jemoji

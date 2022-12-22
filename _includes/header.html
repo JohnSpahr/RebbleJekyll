@@ -1,0 +1,15 @@
+<header>
+    <!-- <i class="rebble-logo-light large-icon"></i> -->
+    {% include real_time_rebble_light.svg %}
+    <span class="headertext">
+        <span class="sitename"><a href="{{ "/" | prepend: site.baseurl | prepend: site.url }}">{{ site.title }}</a></span>
+        {% if page.title and page.title != 'Rebble' and page.layout != 'post' %}
+            <span class="separator">·</span>
+            <span class="pagename">{{page.title}}</span>
+        {% elsif page.layout == 'post' %}
+            <span class="separator">·</span>
+            <span class="pagename">blog</span>
+        {% endif %}
+    </span>
+    <i class="rebble-logo-spacer large-icon"></i>
+</header>

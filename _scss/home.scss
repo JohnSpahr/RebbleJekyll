@@ -1,0 +1,74 @@
+/* --- Home page styles -- */
+.home-container {
+	> .intro {
+		position: relative;
+		> .bg {
+			background-color: $header-background-color;
+			height: calc(100% - 60px);
+			max-height: calc(100% - 60px);
+			z-index: 0;
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+		}
+		> .content {
+			z-index: 10;
+			position: relative;
+			display: block;
+			margin: 0 auto 2rem;
+			padding: 15px;
+			max-width: 46rem;
+			width: 80vw;
+			box-sizing: border-box;
+			user-select: text;
+			-moz-user-select: text;
+			-webkit-user-select: text;
+		}
+	}
+	.title {
+		color: $light-heading-color;
+	}
+	.summary {
+		color: $light-secondary-text-color;
+		a {
+			color: $light-link-color;
+		}
+	}
+	.button {
+		margin-left: 0;
+	}
+}
+
+.homepage-sticker {
+	text-align: center;
+	justify-content: center;
+	vertical-align: middle;
+	background-color: $dev-portal-blue;
+	border: 2px dashed $rebble-color;
+	position: absolute;
+	top: 30px;
+	left: 60%;
+	border-radius: 50%;
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	// line-height: 100px;
+	transform: rotate(5deg);
+	font-family: montserrat, Arial, Sans-Serif;
+	color: white;
+}
+.homepage-sticker span {
+	position: relative;
+	top: -10px;
+	color: $dev-portal-blue;
+}
+.homepage-sticker img {
+	width: 120px;
+	height: 120px;
+}
+@media (max-width : 500px) {
+	.homepage-sticker {
+		display: none;
+	}
+}
